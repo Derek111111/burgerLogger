@@ -1,0 +1,13 @@
+{{#if devoured}}
+
+    <div id="eaten" data-id="{{id}}" class="right">
+         <p>{{burger_Name}}</p>
+    </div>
+
+{{else}}
+
+    <div id="not-eaten" data-id="{{id}}" class="left">
+        <p>{{burger_Name}} :</p> <button class="clearPos" type="button" id="devour-button" data-id="{{id}}">Devour!</button> 
+    </div>
+
+{{/if}}
